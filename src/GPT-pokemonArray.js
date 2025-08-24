@@ -49,10 +49,7 @@ export const cards1 = [
   { index: 48, name: "Heatmor", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 49, name: "Salandit", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 50, name: "Salazzle", rarity: { type: "diamond", value: 1 }, copies: 0 },
-  { index: 51, name: "Sizzlipede", rarity: { type: "diamond", value: 1 }, copies: 0 }
-];
-
-export const cards2 = [
+  { index: 51, name: "Sizzlipede", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 52, name: "Centiskorch", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 53, name: "Squirtle", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 54, name: "Wartortle", rarity: { type: "diamond", value: 1 }, copies: 0 },
@@ -101,10 +98,7 @@ export const cards2 = [
   { index: 97, name: "Magnemite", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 98, name: "Magneton", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 99, name: "Voltorb", rarity: { type: "diamond", value: 1 }, copies: 0 },
-  { index: 100, name: "Electrode", rarity: { type: "diamond", value: 1 }, copies: 0 }
-];
-
-export const cards3 = [
+  { index: 100, name: "Electrode", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 101, name: "Electabuzz", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 102, name: "Jolteon", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 103, name: "Zapdos", rarity: { type: "diamond", value: 1 }, copies: 0 },
@@ -154,10 +148,7 @@ export const cards3 = [
   { index: 147, name: "Geodude", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 148, name: "Graveler", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 149, name: "Golem", rarity: { type: "diamond", value: 1 }, copies: 0 },
-  { index: 150, name: "Onix", rarity: { type: "diamond", value: 1 }, copies: 0 }
-];
-
-export const cards4 = [
+  { index: 150, name: "Onix", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 151, name: "Cubone", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 152, name: "Marowak", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 153, name: "Marowak ex", rarity: { type: "diamond", value: 4 }, copies: 0 },
@@ -207,10 +198,7 @@ export const cards4 = [
   { index: 197, name: "Persian", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 198, name: "Farfetch'd", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 199, name: "Doduo", rarity: { type: "diamond", value: 1 }, copies: 0 },
-  { index: 200, name: "Dodrio", rarity: { type: "diamond", value: 1 }, copies: 0 }
-];
-
-export const cards5 = [
+  { index: 200, name: "Dodrio", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 201, name: "Lickitung", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 202, name: "Chansey", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 203, name: "Kangaskhan", rarity: { type: "diamond", value: 1 }, copies: 0 },
