@@ -9,7 +9,7 @@ export default function HeaderComponent() {
           <nav className='flex justify-between items-center'>
             <div className='flex items-center'>
               <Link to='/' className=''>
-                <img className='w-28 min-w-28 h-auto sm:w-32' src="images/logo2.png" alt="Go to homepage" />
+                <img className='w-28 min-w-28 h-auto sm:w-32' src="images/SPT-logo.png" alt="Go to homepage" />
               </Link>
               <div className='ml-4 hidden md:block'>
                 <h1 className='text-2xl font-bold text-blue-700 xl:text-3xl'>Pocket Trading</h1>
