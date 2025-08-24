@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { cards1 } from '../GPT-pokemonArray'
+import { cardsImport } from '../GPT-pokemonArray'
+import { useState } from 'react'
 
 export default function HomePageComponent() {
+
+  const [cards, setCards] = useState(cardsImport);
+
+
+
   return (
     <>
       <div className='mt-2 flex flex-col gap-8 px-[6%]'>
@@ -24,15 +30,17 @@ export default function HomePageComponent() {
             </section> */}
 
             <section>
-              <div className='flex flex-wrap gap-12'>
-                {cards1.map((card) => (
-                  <div key={card.index} className='flex flex-col items-center'>
-                    <div className='h-[14rem] w-[10rem] border-black border'></div>
-                    <p>#{card.index} {card.name}</p>
-                    <p>{card.rarity.value} {card.rarity.type}</p>
-                    <div className='flex gap-6'>
+              <div className='flex flex-wrap gap-x-16 gap-y-12'>
+                {cards.map((card) => (
+                  <div className='flex flex-col items-center gap-y-2' key={card.index}>
+                    <div className='h-[11rem] w-[8rem] border-black border'></div>
+                    <p className='text-sm'>#{card.index}</p>
+                    <p className='text-xl'>{card.name}</p>
+                    {/* <p>#{card.index}</p> */}
+                    <p className='text-sm'>{card.rarity.value} {card.rarity.type}</p>
+                    <div className='flex gap-6 text-xl'>
                       <p className='px-2 rounded-full border-black border'>-</p>
-                      <p>{card.copies}</p>
+                      <p className=''>{card.copies}</p>
                       <p className='px-2 rounded-full border-black border'>+</p>
                     </div>
                   </div>

@@ -1,4 +1,4 @@
-export const cards1 = [
+export const cardsImport = [
   { index: 1, name: "Bulbasaur", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 2, name: "Ivysaur", rarity: { type: "diamond", value: 1 }, copies: 0 },
   { index: 3, name: "Venusaur", rarity: { type: "diamond", value: 1 }, copies: 0 },
