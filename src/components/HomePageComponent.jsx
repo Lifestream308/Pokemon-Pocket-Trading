@@ -19,6 +19,13 @@ export default function HomePageComponent() {
 
   const filteredCards = cards.filter((card) => !filterOut[card.rarity.value + card.rarity.type])
 
+  const handleCheckboxFilter = (key) => {
+  setFilterOut(prev => ({
+    ...prev, 
+    [key]: !prev[key]
+  }));
+  };
+
    const incrementCopies = (cardNumber) => {
     setCards((prev) => {
       const newCards = [...prev];
@@ -48,6 +55,19 @@ export default function HomePageComponent() {
             <div className='mt-2 text-center md:hidden'>
               <h1 className='text-2xl font-bold text-blue-700 md:hidden'>Pocket Trading</h1>
               <h2 className='font-extralight text-gray-600 text-base'>No account needed</h2>
+            </div>
+            <div className='flex flex-col'>
+              <p>Filters</p>
+              {Object.keys(filterOut).map((key) => (
+                <label key={key}>
+                  <input
+                    type="checkbox"
+                    checked={!filterOut[key]}
+                    onChange={() => handleCheckboxFilter(key)}
+                  />
+                  Rarity {key}
+                </label>
+              ))}
             </div>
             <section>
               <div className='flex flex-wrap gap-x-16 gap-y-12'>
