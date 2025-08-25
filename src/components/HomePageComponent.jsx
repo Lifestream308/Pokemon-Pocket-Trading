@@ -7,6 +7,18 @@ export default function HomePageComponent() {
 
   const [cards, setCards] = useState(cardsImport);
 
+  const [filterOut, setFilterOut] = useState(
+    {
+      "1diamond" : false,
+      "2diamond" : false,
+      "3diamond" : false,
+      "4diamond" : false,
+      "1star" : false
+    }
+  );
+
+  const filteredCards = cards.filter((card) => !filterOut[card.rarity.value + card.rarity.type])
+
    const incrementCopies = (cardNumber) => {
     setCards((prev) => {
       const newCards = [...prev];
@@ -39,7 +51,7 @@ export default function HomePageComponent() {
             </div>
             <section>
               <div className='flex flex-wrap gap-x-16 gap-y-12'>
-                {cards.map((card) => (
+                {filteredCards.map((card) => (
                   <div className='flex flex-col items-center gap-y-2' key={card.index}>
                     <div className='h-[11rem] w-[8rem] border-black border'></div>
                     <p className='text-sm'>#{card.index}</p>
