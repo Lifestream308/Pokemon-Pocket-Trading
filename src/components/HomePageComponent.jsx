@@ -56,11 +56,11 @@ export default function HomePageComponent() {
               <h1 className='text-2xl font-bold text-blue-700 md:hidden'>Pocket Trading</h1>
               <h2 className='font-extralight text-gray-600 text-base'>No account needed</h2>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col gap-1'>
               <p>Filters</p>
               {Object.keys(filterOut).map((key) => (
                 <label key={key}>
-                  <input
+                  <input className='mx-2'
                     type="checkbox"
                     checked={!filterOut[key]}
                     onChange={() => handleCheckboxFilter(key)}
@@ -78,9 +78,9 @@ export default function HomePageComponent() {
                     <p className='text-xl'>{card.name}</p>
                     <p className='text-sm'>{card.rarity.value} {card.rarity.type}</p>
                     <div className='flex gap-6 text-xl'>
-                      <p className='px-2 rounded-full border-black border' onClick={() => decrementCopies(card.index)}>-</p>
+                      <button className='px-2 rounded-full border-black border' onClick={() => decrementCopies(card.index)}>-</button>
                       <p className=''>{card.copies}</p>
-                      <p className='px-2 rounded-full border-black border' onClick={() => incrementCopies(card.index)}>+</p>
+                      <button className='px-2 rounded-full border-black border' onClick={() => incrementCopies(card.index)}>+</button>
                     </div>
                   </div>
                 ))}
