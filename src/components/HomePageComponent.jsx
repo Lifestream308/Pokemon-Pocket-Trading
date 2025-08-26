@@ -5,7 +5,8 @@ import { useState } from 'react'
 
 export default function HomePageComponent({cards, setCards}) {
 
-  // const [cards, setCards] = useState(cardsImport);
+  // const url = cards.reduce((acc, card) => acc + card.copies.toString(), "")
+  // console.log(url)
 
   const [filterOut, setFilterOut] = useState(
     {
