@@ -5,8 +5,10 @@ import { useState } from 'react'
 
 export default function HomePageComponent({cards, setCards}) {
 
-  // const url = cards.reduce((acc, card) => acc + card.copies.toString(), "")
-  // console.log(url)
+  const handleClickURL = () => {
+    const url = cards.reduce((acc, card) => acc + card.copies.toString(), "")
+    console.log(url)
+  }
 
   const [filterOut, setFilterOut] = useState(
     {
@@ -56,6 +58,9 @@ export default function HomePageComponent({cards, setCards}) {
             <div className='mt-2 text-center md:hidden'>
               <h1 className='text-2xl font-bold text-blue-700 md:hidden'>Pocket Trading</h1>
               <h2 className='font-extralight text-gray-600 text-base'>No account needed</h2>
+            </div>
+            <div>
+              <button className='px-4 py-2 rounded-lg bg-blue-500 text-white' onClick={() => handleClickURL()}>Create URL</button>
             </div>
             <div className='flex flex-col gap-1'>
               <p>Filters</p>
