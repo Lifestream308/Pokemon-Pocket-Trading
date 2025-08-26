@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { cardsImport } from '../GPT-pokemonArray'
+// import { cardsImport } from '../GPT-pokemonArray'
 import { useState } from 'react'
 
-export default function HomePageComponent() {
+export default function HomePageComponent({cards, setCards}) {
 
-  const [cards, setCards] = useState(cardsImport);
+  // const [cards, setCards] = useState(cardsImport);
 
   const [filterOut, setFilterOut] = useState(
     {
