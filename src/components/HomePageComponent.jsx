@@ -83,10 +83,12 @@ export default function HomePageComponent({cards, setCards}) {
               ))}
             </div>
             <section>
-              <div className='flex flex-wrap gap-x-16 gap-y-12'>
+              <div className='flex flex-wrap gap-x-4 gap-y-6 md:gap-x-16 md:gap-y-12'>
                 {filteredCards.map((card) => (
                   <div className='flex flex-col items-center gap-y-2' key={card.index}>
-                    <div className='h-[11rem] w-[8rem] border-black border'></div>
+                    <div className='h-[11rem] w-[8rem] border-black border'>
+                      
+                    </div>
                     <p className='text-sm'>#{card.index}</p>
                     <p className='text-xl'>{card.name}</p>
                     <p className='text-sm'>{card.rarity.value} {card.rarity.type}</p>
