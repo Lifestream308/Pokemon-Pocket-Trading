@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export default function HomePageComponent({cards, setCards}) {
 
-  const textToCopy = cards.reduce((acc, card) => acc + card.copies.toString(), "")
+  const textToCopy = "https://pockettrading.netlify.app/" + cards.reduce((acc, card) => acc + card.copies.toString(), "")
 
   const handleCopy = async () => {
     try {
